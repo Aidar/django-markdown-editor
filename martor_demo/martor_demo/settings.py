@@ -100,6 +100,10 @@ TEMPLATES = [
     },
 ]
 
+# Imgur API Keys
+MARTOR_IMGUR_CLIENT_ID = '35f27ff28856522'
+MARTOR_IMGUR_API_KEY = 'd091b37c42852a4c594482f8abbdeaebf58749db'
+
 WSGI_APPLICATION = "martor_demo.wsgi.application"
 
 
