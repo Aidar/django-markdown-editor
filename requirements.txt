@@ -7,4 +7,3 @@ bleach
 tzdata
 martor
 gunicorn
-django-environ

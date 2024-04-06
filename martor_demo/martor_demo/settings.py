@@ -12,25 +12,23 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 import tempfile
-import environ
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-env = environ.Env()
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('DJANGO_SECRET_KEY', default='+1zhx_fpkkyj&z+3n!63fx0)og)@h5^7qyr8e0s%c@p8_&t&+l')
+SECRET_KEY = "+1zhx_fpkkyj&z+3n!63fx0)og)@h5^7qyr8e0s%c@p8_&t&+l"
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DJANGO_DEBUG", True)
-env.list("DJANGO_ALLOWED_HOSTS", default=[])
+DEBUG = True
+ALLOWED_HOSTS = ["*"]
 
 # Martor Configuration
 MARTOR_THEME = "bootstrap"  # semantic
